@@ -38,6 +38,6 @@ describe('chainer', () => {
   });
 
   test('should return undefined when empty conditions', () => {
-    expect(chainer([])()).toBeUndefined();
+    expect(chainer([])(42)).toBe(42)
   });
 });
