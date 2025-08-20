@@ -38,10 +38,6 @@ describe('chainer', () => {
   });
 
   test('should return undefined when empty conditions', () => {
-    const f1 = jest.fn();
-    const f2 = jest.fn();
-    const f3 = jest.fn();
-
-    expect(chainer([f1, f2, f3])(false)).toBeUndefined();
+    expect(chainer([])()).toBeUndefined();
   });
 });
